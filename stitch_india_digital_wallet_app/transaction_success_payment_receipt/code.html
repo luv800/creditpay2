@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#eff4ff", "surface-bright": "#f8f9ff", "secondary-container": "#316bf3", "on-background": "#0b1c30", "surface-tint": "#515f78", "primary": "#000000", "on-surface-variant": "#44474d", "on-error": "#ffffff", "on-surface": "#0b1c30", "inverse-surface": "#213145", "secondary": "#0051d5", "error": "#ba1a1a", "primary-fixed": "#d6e3ff", "surface-container": "#e5eeff", "on-primary-container": "#76849f", "surface-dim": "#cbdbf5", "tertiary-container": "#002113", "outline": "#75777e", "on-secondary-fixed": "#00174b", "inverse-on-surface": "#eaf1ff", "surface": "#f8f9ff", "error-container": "#ffdad6", "inverse-primary": "#b9c7e4", "secondary-fixed-dim": "#b4c5ff", "primary-fixed-dim": "#b9c7e4", "tertiary-fixed": "#6ffbbe", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#009668", "secondary-fixed": "#dbe1ff", "surface-container-highest": "#d3e4fe", "surface-container-high": "#dce9ff", "on-secondary-container": "#fefcff", "on-secondary-fixed-variant": "#003ea8", "on-tertiary-fixed-variant": "#005236", "on-secondary": "#ffffff", "on-primary": "#ffffff", "primary-container": "#0d1c32", "background": "#f8f9ff", "on-tertiary": "#ffffff", "outline-variant": "#c5c6cd", "on-error-container": "#93000a", "on-primary-fixed-variant": "#39475f", "surface-variant": "#d3e4fe", "on-primary-fixed": "#0d1c32", "on-tertiary-fixed": "#002113", "tertiary": "#000000", "tertiary-fixed-dim": "#4edea3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "gutter": "1rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "space-xl": "2rem", "margin": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem" }, "fontFamily": { "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-numeric": ["JetBrains Mono"], "label-code": ["JetBrains Mono"] }, "fontSize": { "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-code": ["11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] -ml-2 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-headline-sm">arrow_back</span></button><img alt="PaisaPay Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdi3HOVxGh0LDzq52_cpD0qE64-a0nSVY63LGdFRhqxImi5-JgqTBCMT6tk8lxPuLJ_Oj2QHgPdVRC5akcbZ1wQ41L3mLgZa2Dpd0_wysjKV_WJMxCI48PpXlVG61txTJJMbAfhCbnZil176UCoHkkeN9TyaoTR7HmuyvL4BqhYU6Vim3i7qiKi1KM2C-auWSYNu1MG_Mi1OpxbrXtAgEaq0vsBJWoHJ7afHikqZjXri4eJkdsa1rh"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Upi Payment Flow</h1></div><div class="flex items-center gap-space-sm"><div class="relative flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoqumdS_fQA-5NB-MiFHmouunxwc5wG4YwPHSFy1VQswsgJ1-9VDztQ7WK6M7siTPvIVHxBuEj14Ed4LQ759vTjrrJS18Id5npA2xQntdzlEqMUtOVEqd9w0__XV3KeTs5Zq5OlqVssv6GAeErWGF3cWSiolHK9SUyeMLjSUACeSazwP3nB6XYDpbywWrFPl9fCKxSdwTzSfbrGfKrGI-mCF1zAv3ky-judZ_zHPEto9EwMkZ_nJ47"/><span class="material-symbols-outlined absolute -bottom-1 -right-1 text-on-tertiary-container bg-surface-container-lowest rounded-full p-0.5 text-body-sm leading-none">verified_user</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-space-xl">
+<!-- Status & Assured Badges Row -->
+<div class="flex items-center justify-between py-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-3 py-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-secondary text-body-md" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">BBPS Assured</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full bg-surface-container-high font-label-code text-label-code text-on-surface-variant font-medium">
+        NPCI SETTLED
+      </span>
+<button aria-label="Close" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-highest transition-colors" onclick="window.history.back()">
+<span class="material-symbols-outlined text-body-md">close</span>
+</button>
+</div>
+</div>
+<!-- Hero Celebration Card -->
+<div class="relative overflow-hidden bg-primary-container rounded-xl p-space-md shadow-xl text-on-primary mb-space-md">
+<!-- Ambient Radial Glow Backdrops -->
+<div class="absolute -right-10 -top-10 w-44 h-44 rounded-full bg-secondary-container/20 blur-2xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 w-40 h-40 rounded-full bg-tertiary-fixed-dim/15 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center text-center">
+<!-- Success Icon Pulse Container -->
+<div class="relative my-space-xs flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-on-tertiary-container/20 flex items-center justify-center animate-pulse"></div>
+<div class="absolute w-12 h-12 rounded-full bg-on-tertiary-container flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-surface-container-lowest text-headline-sm" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-primary mt-space-xs">Payment Successful!</span>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-0.5">Adani Electricity Mumbai Ltd • CA 102 938 475</p>
+<!-- Amount Section -->
+<div class="flex items-baseline justify-center gap-1 mt-space-sm">
+<span class="font-display-lg text-display-lg text-on-primary tracking-tight font-bold">₹1,410.00</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-primary-container font-body-sm text-body-sm mt-1">
+<span class="material-symbols-outlined text-body-sm">schedule</span>
+<span>24 Oct 2024, 03:42 PM IST</span>
+</div>
+<!-- Copyable UTR / Reference Pill -->
+<div class="mt-space-md inline-flex items-center gap-2 bg-inverse-surface/80 px-3 py-1.5 rounded-lg shadow-sm">
+<span class="font-label-code text-label-code text-primary-fixed">BBPS Ref:</span>
+<span class="font-label-numeric text-label-numeric text-surface-container-lowest" id="ref-code">BBPS/2024/098765432109</span>
+<button class="text-on-primary-container hover:text-on-primary flex items-center ml-0.5" id="copy-btn" onclick="navigator.clipboard.writeText('BBPS/2024/098765432109'); this.innerHTML='&lt;span class=\'material-symbols-outlined text-body-sm text-tertiary-fixed-dim\'&gt;done&lt;/span&gt;';">
+<span class="material-symbols-outlined text-body-sm">content_copy</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Reward Delight Toast Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-sm mb-space-md shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">redeem</span>
+</div>
+<div>
+<div class="font-headline-sm text-body-md font-semibold text-on-surface">₹10 Instant Cashback</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Credited back to PaisaPay Wallet</div>
+</div>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-1 rounded bg-surface-container-low text-secondary font-bold uppercase">
+      CLAIMED
+    </span>
+</div>
+<!-- Official Receipt Invoice Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md mb-space-md">
+<!-- Receipt Header -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<img class="w-8 h-8 rounded object-contain bg-surface-container-low p-1" data-alt="Official electricity utility provider company logo mark, clean vector graphic on white background with electric spark badge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTpac0xdtVFFLwNiu1FxkD5wFeMWLGy4xAG4tuRWmlssnN4_eJPrAPYsYTfZXFAuvhRR2sLE37HxJjv_xjrLP26Io4kHrsxJR8ViQ_AEzqmnz-f_iYTenkf686ATxonM_kVQr5U4IaqBeIzwMXS-4cOH5jeKdU3wDAKtAlE7ZnVNNjbGhTBcuf8A7QDfRv0v18_rL0MFUNv-WXVHDSpWDtw4I4C65prKZ6mpuzI_nrY434bXeycHs6"/>
+<div>
+<div class="font-body-md text-body-md font-bold text-on-surface leading-tight">Adani Electricity Mumbai Ltd</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Consumer No: 102 938 475 (Rahul Sharma)</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-tertiary-container text-headline-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Scalloped / Perforated look separator bar -->
+<div class="w-full h-1 bg-surface-container-low rounded-full my-space-xs mb-space-sm"></div>
+<!-- Payment Source Detail -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-body-lg" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+<div>
+<div class="font-body-sm text-body-sm font-semibold text-on-surface">PaisaPay Wallet</div>
+<div class="font-label-code text-label-code text-on-surface-variant">Updated Balance: ₹13,440.50</div>
+</div>
+</div>
+<span class="font-label-caps text-label-caps text-on-tertiary-container bg-surface-container-lowest px-2 py-0.5 rounded font-bold">DEBITED</span>
+</div>
+<!-- Breakdown Rows -->
+<div class="flex flex-col gap-2 font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Standard Bill Amount</span>
+<span class="font-label-numeric text-on-surface">₹1,420.00</span>
+</div>
+<div class="flex items-center justify-between text-on-tertiary-container font-medium">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm">sell</span>
+          Coupon BILLPAY10
+        </span>
+<span class="font-label-numeric">- ₹10.00</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>Convenience / Platform Fee</span>
+<span class="font-label-numeric text-on-tertiary-container font-bold">FREE</span>
+</div>
+<!-- Total Line -->
+<div class="w-full h-1 bg-surface-container-low rounded-full my-1"></div>
+<div class="flex items-center justify-between pt-1 font-body-lg text-body-lg font-bold text-on-surface">
+<span>Total Paid</span>
+<span class="font-label-numeric text-secondary font-bold">₹1,410.00</span>
+</div>
+</div>
+</div>
+<!-- Regulatory Assurance Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center shrink-0 text-on-surface">
+<span class="material-symbols-outlined text-body-lg">shield</span>
+</div>
+<div class="flex-1">
+<div class="font-body-md text-body-md font-semibold text-on-surface">DISCOM Settlement Assured</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 leading-relaxed">
+          Direct credit acknowledged by Discom servers. Official payment confirmation receipt SMS sent to <span class="font-label-numeric text-on-surface font-semibold">+91 98765 21098</span>.
+        </p>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-body-sm">assured_workload</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">NPCI &amp; RBI REGULATED BBPS RAIL</span>
+</div>
+<span class="font-label-code text-label-code text-on-surface-variant font-medium">AEML-9842</span>
+</div>
+</div>
+<!-- Action CTA Buttons Grid -->
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<button class="h-12 bg-secondary text-on-secondary rounded-xl font-body-md text-body-md font-bold flex items-center justify-center gap-2 shadow-md hover:bg-secondary-container transition-all active:scale-95" onclick="this.classList.add('scale-95'); setTimeout(()=&gt;this.classList.remove('scale-95'), 150);">
+<span class="material-symbols-outlined text-body-lg">download</span>
+<span>Download PDF</span>
+</button>
+<button class="h-12 bg-surface-container-lowest text-secondary rounded-xl font-body-md text-body-md font-bold flex items-center justify-center gap-2 shadow-sm hover:bg-surface-container transition-all active:scale-95" onclick="this.classList.add('scale-95'); setTimeout(()=&gt;this.classList.remove('scale-95'), 150);">
+<span class="material-symbols-outlined text-body-lg">share</span>
+<span>Share Receipt</span>
+</button>
+</div>
+<!-- Secondary Actions & Grievance Footer -->
+<div class="flex flex-col items-center text-center gap-space-sm">
+<button class="w-full h-12 bg-surface-container-high text-on-surface rounded-xl font-body-md text-body-md font-semibold flex items-center justify-center gap-1.5 hover:bg-surface-container-highest transition-colors" onclick="window.history.back()">
+<span>Pay Another Bill</span>
+<span class="material-symbols-outlined text-body-md">arrow_forward</span>
+</button>
+<div class="flex items-center justify-center gap-1.5 mt-space-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-body-sm">help</span>
+<span class="font-body-sm text-body-sm">Have issues?</span>
+<button class="font-body-sm text-body-sm font-semibold text-secondary hover:underline">
+        Raise a Dispute / BBPS Grievance
+      </button>
+</div>
+</div>
+</div></main></body></html>

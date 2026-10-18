@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India Digital Wallet App</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    /* Fixed Navigation Bar for testing all screens */
+    #dev-nav {
+      width: 100%;
+      background: #1e293b;
+      padding: 10px 16px;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      border-bottom: 1px solid #334155;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    #dev-nav button {
+      background: #334155;
+      color: #f8fafc;
+      border: 1px solid #475569;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    #dev-nav button:hover,
+    #dev-nav button.active {
+      background: #2563eb;
+      border-color: #3b82f6;
+    }
+    /* Mobile frame container */
+    #app-container {
+      width: 100%;
+      max-width: 430px;
+      height: calc(100vh - 50px);
+      background: #ffffff;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Navigation Bar -->
+  <nav id="dev-nav">
+    <button class="active" onclick="loadScreen('mobile_login_authentication/code.html', this)">1. Login</button>
+    <button onclick="loadScreen('kyc_verification_account_security_status/code.html', this)">2. KYC</button>
+    <button onclick="loadScreen('home_wallet_hub/code.html', this)">3. Home Hub</button>
+    <button onclick="loadScreen('add_money_to_wallet/code.html', this)">4. Add Money</button>
+    <button onclick="loadScreen('apply_coupons_offers_modal/code.html', this)">5. Coupons</button>
+    <button onclick="loadScreen('bbps_utility_routine_bill_payment/code.html', this)">6. Bill Pay</button>
+    <button onclick="loadScreen('payment_checkout_confirmation/code.html', this)">7. Checkout</button>
+    <button onclick="loadScreen('transaction_success_payment_receipt/code.html', this)">8. Success</button>
+  </nav>
+
+  <!-- Device viewport -->
+  <main id="app-container">
+    <iframe id="screen-frame" src="mobile_login_authentication/code.html"></iframe>
+  </main>
+
+  <script>
+    function loadScreen(path, btn) {
+      document.getElementById('screen-frame').src = path;
+      document.querySelectorAll('#dev-nav button').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#eff4ff", "surface-bright": "#f8f9ff", "secondary-container": "#316bf3", "on-background": "#0b1c30", "surface-tint": "#515f78", "primary": "#000000", "on-surface-variant": "#44474d", "on-error": "#ffffff", "on-surface": "#0b1c30", "inverse-surface": "#213145", "secondary": "#0051d5", "error": "#ba1a1a", "primary-fixed": "#d6e3ff", "surface-container": "#e5eeff", "on-primary-container": "#76849f", "surface-dim": "#cbdbf5", "tertiary-container": "#002113", "outline": "#75777e", "on-secondary-fixed": "#00174b", "inverse-on-surface": "#eaf1ff", "surface": "#f8f9ff", "error-container": "#ffdad6", "inverse-primary": "#b9c7e4", "secondary-fixed-dim": "#b4c5ff", "primary-fixed-dim": "#b9c7e4", "tertiary-fixed": "#6ffbbe", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#009668", "secondary-fixed": "#dbe1ff", "surface-container-highest": "#d3e4fe", "surface-container-high": "#dce9ff", "on-secondary-container": "#fefcff", "on-secondary-fixed-variant": "#003ea8", "on-tertiary-fixed-variant": "#005236", "on-secondary": "#ffffff", "on-primary": "#ffffff", "primary-container": "#0d1c32", "background": "#f8f9ff", "on-tertiary": "#ffffff", "outline-variant": "#c5c6cd", "on-error-container": "#93000a", "on-primary-fixed-variant": "#39475f", "surface-variant": "#d3e4fe", "on-primary-fixed": "#0d1c32", "on-tertiary-fixed": "#002113", "tertiary": "#000000", "tertiary-fixed-dim": "#4edea3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "gutter": "1rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "space-xl": "2rem", "margin": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem" }, "fontFamily": { "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-numeric": ["JetBrains Mono"], "label-code": ["JetBrains Mono"] }, "fontSize": { "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-code": ["11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] -ml-2 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-headline-sm">arrow_back</span></button><img alt="PaisaPay Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdi3HOVxGh0LDzq52_cpD0qE64-a0nSVY63LGdFRhqxImi5-JgqTBCMT6tk8lxPuLJ_Oj2QHgPdVRC5akcbZ1wQ41L3mLgZa2Dpd0_wysjKV_WJMxCI48PpXlVG61txTJJMbAfhCbnZil176UCoHkkeN9TyaoTR7HmuyvL4BqhYU6Vim3i7qiKi1KM2C-auWSYNu1MG_Mi1OpxbrXtAgEaq0vsBJWoHJ7afHikqZjXri4eJkdsa1rh"/><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Upi Payment Flow</h1></div><div class="flex items-center gap-space-sm"><div class="relative flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-container-highest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoqumdS_fQA-5NB-MiFHmouunxwc5wG4YwPHSFy1VQswsgJ1-9VDztQ7WK6M7siTPvIVHxBuEj14Ed4LQ759vTjrrJS18Id5npA2xQntdzlEqMUtOVEqd9w0__XV3KeTs5Zq5OlqVssv6GAeErWGF3cWSiolHK9SUyeMLjSUACeSazwP3nB6XYDpbywWrFPl9fCKxSdwTzSfbrGfKrGI-mCF1zAv3ky-judZ_zHPEto9EwMkZ_nJ47"/><span class="material-symbols-outlined absolute -bottom-1 -right-1 text-on-tertiary-container bg-surface-container-lowest rounded-full p-0.5 text-body-sm leading-none">verified_user</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-margin-mobile pb-28 gap-space-md">
+<!-- Security & Encrypted Status Tag -->
+<div class="flex items-center justify-between py-space-xs px-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-body-sm text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">256-Bit Bank-Grade SSL</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span>
+<span class="font-label-code text-label-code text-on-surface-variant">RBI Mandated Rail</span>
+</div>
+</div>
+<!-- Celebratory Applied Coupon & Savings Hero Card -->
+<div class="relative overflow-hidden bg-primary-container text-on-primary rounded-xl p-space-md shadow-md">
+<!-- Decorative confetti particles background -->
+<div class="absolute -right-6 -top-6 w-24 h-24 bg-secondary-container/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="absolute right-12 bottom-1 w-16 h-16 bg-tertiary-fixed/15 rounded-full blur-lg pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 flex items-center justify-center text-tertiary-fixed">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">redeem</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-surface-container-lowest tracking-tight">₹50 Cashback</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-caps text-label-caps">SAVED</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container">Code <span class="font-label-numeric text-label-numeric font-bold text-surface-container-lowest">CARDFIRST</span> Applied</p>
+</div>
+</div>
+<button class="text-secondary-fixed hover:text-surface-container-lowest font-body-sm text-body-sm underline transition-colors" id="toggle-coupon-breakdown">
+          Change
+        </button>
+</div>
+<!-- Financial Micro Ledger -->
+<div class="mt-space-xs pt-space-xs flex flex-col gap-1.5 bg-surface-container-lowest/5 rounded-lg p-space-sm">
+<div class="flex justify-between items-center text-on-primary-container font-body-sm text-body-sm">
+<span>Wallet Top-Up Base</span>
+<span class="font-label-numeric text-label-numeric text-surface-container-lowest">₹2,000.00</span>
+</div>
+<div class="flex justify-between items-center text-on-primary-container font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+            Convenience Fee
+            <span class="material-symbols-outlined text-[14px]">info</span>
+</span>
+<span class="text-tertiary-fixed font-label-caps text-label-caps uppercase">Free (₹0)</span>
+</div>
+<div class="flex justify-between items-center font-body-sm text-body-sm text-tertiary-fixed">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">savings</span>
+            Assured Wallet Credit
+          </span>
+<span class="font-label-numeric text-label-numeric font-bold">+ ₹50.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Section: User & Merchant Confidence Indicator -->
+<div class="flex items-center gap-space-sm bg-surface-container-lowest rounded-xl p-space-sm shadow-sm">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Close up photographic portrait of a smiling Indian young professional woman in a serene office wearing smart casual attire with natural daylight, conveying safety and financial happiness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5kCpgzJDJI6D5aR2Bx9zdsX253zlSng5MddPcga8rHULwFAATR3dphjVH-1eMIXf--7PnHJA4XB3fF0U7rc7bjhSjyEw30HRi7Yj9sSfMSyiHs9ea35UAfehoA0WXQ1N5rGuDsrNWw32BP8hVbhlQUk76WB4z0OSaxAhhOo_NO7YGZFMTnD7wuPb5xrjv2YyArElWrME-GjvqBx9j1R094t1V6T5gd_FSf-qKlatOitEQ_AyIu10b"/>
+<div class="flex flex-col flex-1 min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">Crediting PaisaPay Wallet</span>
+<span class="font-label-code text-label-code text-on-surface-variant truncate">Linked Mobile: +91 ••••• 38192</span>
+</div>
+<div class="px-space-xs py-1 rounded-md bg-surface-container-high text-on-surface font-label-code text-label-code">
+      Active KYC
+    </div>
+</div>
+<!-- Section Title -->
+<div class="flex items-center justify-between pt-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Select Payment Method</h2>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Fast Checkout</span>
+</div>
+<!-- Accordion/Selector Method Groups -->
+<div class="flex flex-col gap-space-sm">
+<!-- 1. Credit Cards Group (Active/Selected State) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Recommended Credit Card</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-secondary font-label-caps text-label-caps font-bold">₹50 Offer Active</span>
+</div>
+<!-- Card Selection Item 1 (Selected) -->
+<label class="flex flex-col gap-space-sm cursor-pointer">
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<input checked="" class="w-5 h-5 text-secondary accent-secondary cursor-pointer" name="payment_choice" type="radio" value="icici_rupay"/>
+<div class="w-10 h-7 rounded bg-surface-container flex items-center justify-center font-label-caps text-label-caps font-bold text-on-surface tracking-tighter">
+              RuPay
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-bold text-on-surface truncate">ICICI Coral RuPay Card</span>
+<span class="font-label-numeric text-label-numeric text-on-surface-variant">•••• •••• •••• 9012</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-headline-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Inline Secure CVV Mask Input -->
+<div class="mt-space-xs p-space-sm bg-surface-container-low rounded-xl flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-body-sm text-body-sm font-semibold text-on-surface" for="cvv-input">Enter CVV</label>
+<span class="flex items-center gap-0.5 font-label-code text-label-code text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">lock</span> 3 digits on back
+            </span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="relative w-28">
+<input class="w-full h-11 px-space-sm rounded-lg bg-surface-container-lowest font-label-numeric text-headline-sm tracking-widest text-on-surface text-center focus:outline-none focus:ring-2 focus:ring-secondary" id="cvv-input" maxlength="3" placeholder="•••" type="password" value="824"/>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex-1 min-w-0">
+              RuPay Instant 1-Click Secured via RBI Tokenization
+            </p>
+</div>
+</div>
+</label>
+<!-- Add New Credit Card Option -->
+<button class="flex items-center gap-space-xs text-secondary font-body-sm text-body-sm font-bold pt-space-xs hover:underline text-left">
+<span class="material-symbols-outlined text-body-md">add_circle</span>
+        + Add New Credit Card
+      </button>
+</div>
+<!-- 2. Debit Cards Group -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Saved Debit Cards</span>
+</div>
+<label class="flex items-center justify-between gap-space-sm cursor-pointer">
+<div class="flex items-center gap-space-sm min-w-0">
+<input class="w-5 h-5 text-secondary accent-secondary cursor-pointer" name="payment_choice" type="radio" value="hdfc_visa"/>
+<div class="w-10 h-7 rounded bg-surface-container-high flex items-center justify-center font-label-caps text-label-caps font-black italic text-secondary tracking-widest">
+            VISA
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface truncate">HDFC Millennia Debit Card</span>
+<span class="font-label-numeric text-label-numeric text-on-surface-variant">•••• •••• •••• 4821</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Exp 09/27</span>
+</label>
+<button class="flex items-center gap-space-xs text-secondary font-body-sm text-body-sm font-bold pt-space-xs hover:underline text-left">
+<span class="material-symbols-outlined text-body-md">add_circle</span>
+        + Add New Debit Card
+      </button>
+</div>
+<!-- 3. Net Banking Group -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Net Banking</span>
+<span class="flex items-center gap-1 font-label-code text-label-code text-on-tertiary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span> All Servers Normal
+        </span>
+</div>
+<!-- Quick Bank Avatars Grid -->
+<div class="grid grid-cols-4 gap-space-xs pt-1">
+<button class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors gap-1 text-center" type="button">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center font-label-caps text-label-caps font-bold text-on-surface">SBI</div>
+<span class="font-label-code text-label-code text-on-surface truncate w-full">SBI</span>
+</button>
+<button class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors gap-1 text-center" type="button">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center font-label-caps text-label-caps font-bold text-on-surface">HDFC</div>
+<span class="font-label-code text-label-code text-on-surface truncate w-full">HDFC</span>
+</button>
+<button class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors gap-1 text-center" type="button">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center font-label-caps text-label-caps font-bold text-on-surface">ICICI</div>
+<span class="font-label-code text-label-code text-on-surface truncate w-full">ICICI</span>
+</button>
+<button class="flex flex-col items-center p-2 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors gap-1 text-center" type="button">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center font-label-caps text-label-caps font-bold text-on-surface">AXIS</div>
+<span class="font-label-code text-label-code text-on-surface truncate w-full">Axis</span>
+</button>
+</div>
+<!-- Select Other Bank Trigger -->
+<button class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors mt-space-xs">
+<span class="font-body-md text-body-md text-on-surface-variant">Select other bank</span>
+<span class="material-symbols-outlined text-body-md">expand_more</span>
+</button>
+</div>
+<!-- 4. Instant UPI Secondary Rail -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Instant UPI Payment</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Zero Charges</span>
+</div>
+<label class="flex items-center justify-between gap-space-sm cursor-pointer">
+<div class="flex items-center gap-space-sm min-w-0">
+<input class="w-5 h-5 text-secondary accent-secondary cursor-pointer" name="payment_choice" type="radio" value="instant_upi"/>
+<div class="w-10 h-7 rounded bg-surface-container flex items-center justify-center font-label-caps text-label-caps font-bold text-on-surface">
+            UPI
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Google Pay / PhonePe / Paytm</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Pay via any installed UPI app</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-body-md text-on-surface-variant">arrow_forward_ios</span>
+</label>
+</div>
+</div>
+<!-- Trust, Regulatory & NPCI Compliance Badges -->
+<div class="flex flex-col items-center gap-space-xs py-space-sm text-center">
+<div class="flex items-center justify-center gap-space-md text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">shield</span>
+<span class="font-label-caps text-label-caps">RBI REGULATED</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">lock</span>
+<span class="font-label-caps text-label-caps">PCI-DSS LEVEL 1</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-on-surface" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-caps text-label-caps">NPCI ASSURED</span>
+</div>
+</div>
+<p class="font-label-code text-label-code text-on-surface-variant">
+      Your payment credentials are encrypted and never stored without consent.
+    </p>
+</div>
+<!-- Sticky Bottom Checkout CTA Dock -->
+<div class="fixed bottom-0 left-0 right-0 p-space-md bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-8px_24px_rgba(11,28,48,0.08)] z-40">
+<div class="max-w-lg mx-auto flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Total Payable</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile font-bold text-on-surface">₹2,000</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through">₹2,050</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-surface-container text-on-tertiary-container font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+            +₹50 CASHBACK
+          </div>
+<span class="font-label-code text-label-code text-on-surface-variant pt-0.5">Applied to PaisaPay</span>
+</div>
+</div>
+<!-- Proceed to Pay Button -->
+<button class="w-full h-12 rounded-xl bg-secondary hover:bg-on-secondary-fixed-variant text-on-secondary font-body-lg text-body-lg font-bold flex items-center justify-center gap-space-xs shadow-md active:scale-[0.99] transition-transform" id="pay-submit-btn">
+<span class="material-symbols-outlined text-body-lg">lock</span>
+<span>Proceed to Pay ₹2,000</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Interactive micro-interaction for payment method switching & coupon tap
+  document.querySelectorAll('input[name="payment_choice"]').forEach(radio => {
+    radio.addEventListener('change', (e) => {
+      const btnText = document.querySelector('#pay-submit-btn span:last-child');
+      if (btnText) {
+        btnText.textContent = 'Proceed to Pay ₹2,000';
+      }
+    });
+  });
+
+  const couponToggle = document.getElementById('toggle-coupon-breakdown');
+  if (couponToggle) {
+    couponToggle.addEventListener('click', () => {
+      alert('Available coupons: CARDFIRST (Applied - ₹50 Cashback), FLAT100 (Min load ₹5,000)');
+    });
+  }
+</script></main></body></html>

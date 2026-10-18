@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack_bbps" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-low": "#eff4ff", "surface-bright": "#f8f9ff", "secondary-container": "#316bf3", "on-background": "#0b1c30", "surface-tint": "#515f78", "primary": "#000000", "on-surface-variant": "#44474d", "on-error": "#ffffff", "on-surface": "#0b1c30", "inverse-surface": "#213145", "secondary": "#0051d5", "error": "#ba1a1a", "primary-fixed": "#d6e3ff", "surface-container": "#e5eeff", "on-primary-container": "#76849f", "surface-dim": "#cbdbf5", "tertiary-container": "#002113", "outline": "#75777e", "on-secondary-fixed": "#00174b", "inverse-on-surface": "#eaf1ff", "surface": "#f8f9ff", "error-container": "#ffdad6", "inverse-primary": "#b9c7e4", "secondary-fixed-dim": "#b4c5ff", "primary-fixed-dim": "#b9c7e4", "tertiary-fixed": "#6ffbbe", "surface-container-lowest": "#ffffff", "on-tertiary-container": "#009668", "secondary-fixed": "#dbe1ff", "surface-container-highest": "#d3e4fe", "surface-container-high": "#dce9ff", "on-secondary-container": "#fefcff", "on-secondary-fixed-variant": "#003ea8", "on-tertiary-fixed-variant": "#005236", "on-secondary": "#ffffff", "on-primary": "#ffffff", "primary-container": "#0d1c32", "background": "#f8f9ff", "on-tertiary": "#ffffff", "outline-variant": "#c5c6cd", "on-error-container": "#93000a", "on-primary-fixed-variant": "#39475f", "surface-variant": "#d3e4fe", "on-primary-fixed": "#0d1c32", "on-tertiary-fixed": "#002113", "tertiary": "#000000", "tertiary-fixed-dim": "#4edea3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xs": "0.25rem", "gutter": "1rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "gutter-mobile": "0.75rem", "space-xl": "2rem", "margin": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem" }, "fontFamily": { "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-caps": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-numeric": ["JetBrains Mono"], "label-code": ["JetBrains Mono"] }, "fontSize": { "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-caps": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-numeric": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-code": ["11px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,28,48,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] -ml-2 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors flex-shrink-0" onclick="history.back()"><span class="material-symbols-outlined text-headline-sm">arrow_back</span></button><div class="flex flex-col min-w-0"><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Electricity Bill (BBPS)</h1><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Bharat Bill Payment System</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container border border-surface-container-highest shadow-sm"><span class="material-symbols-outlined text-[16px] text-secondary">verified</span><div class="flex flex-col leading-none"><span class="font-label-code text-[9px] font-bold text-on-surface uppercase tracking-wider">BBPS</span><span class="font-label-caps text-[8px] text-on-tertiary-container font-semibold">ASSURED</span></div></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-32">
+<!-- Top Ambient Banner: Live NPCI BBPS Link Health -->
+<div class="px-margin-mobile pt-3 pb-2 flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="relative flex h-2 w-2 flex-shrink-0">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-on-tertiary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-on-tertiary-container"></span>
+</span>
+<span class="font-label-code text-label-code text-on-surface-variant truncate">NPCI BBPS Active • Instant Settlement</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined text-[13px] text-secondary">bolt</span>
+<span class="font-label-caps text-[10px] text-on-surface font-semibold tracking-wide">MAHARASHTRA</span>
+</div>
+</div>
+<div class="px-margin-mobile flex flex-col gap-4 mt-3">
+<!-- Biller & Consumer Profile Card -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center flex-shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[24px] text-secondary" style="font-variation-settings: 'FILL' 1;">electric_bolt</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-sm text-[16px] text-on-surface font-bold truncate">Adani Electricity Mumbai Ltd</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">AEML • Urban Mumbai Distribution</span>
+</div>
+</div>
+<button class="text-secondary font-label-caps text-label-caps uppercase hover:underline flex-shrink-0 tracking-wider">Change</button>
+</div>
+<div class="bg-surface-container-low rounded-lg p-3 flex items-center justify-between">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">CONSUMER NO (CA)</span>
+<span class="material-symbols-outlined text-[14px] text-on-tertiary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-numeric text-[15px] text-on-surface tracking-wider font-semibold">102 938 475</span>
+<span class="text-on-surface-variant">•</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">Rahul Sharma</span>
+</div>
+</div>
+<div class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">person</span>
+</div>
+</div>
+</div>
+<!-- Live Bill Fetched Details Sovereign Card -->
+<div class="bg-primary-container text-on-primary rounded-xl p-5 shadow-lg relative overflow-hidden">
+<!-- Ambient rupeemark graphic background decoration -->
+<div class="absolute -right-6 -bottom-8 opacity-5 pointer-events-none select-none">
+<span class="font-display-lg text-[160px] text-on-primary font-bold">₹</span>
+</div>
+<!-- Bill Status pill & Due Warning -->
+<div class="flex items-center justify-between relative z-10">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-tertiary-container">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+<span class="font-label-caps text-[10px] text-tertiary-fixed font-semibold uppercase">Bill Fetched</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[13px]">alarm</span>
+<span class="font-label-caps text-[10px] font-bold">DUE IN 2 DAYS</span>
+</div>
+</div>
+<!-- Amount Section -->
+<div class="mt-4 flex flex-col relative z-10">
+<span class="font-label-caps text-label-caps text-on-primary-container uppercase tracking-wider">TOTAL AMOUNT DUE</span>
+<div class="flex items-baseline gap-1 mt-1">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary font-bold">₹1,420</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">.00</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-body-sm text-body-sm text-on-primary-container">Bill Date: 12 Oct 2024</span>
+<span class="text-on-primary-container opacity-50">•</span>
+<span class="font-body-sm text-body-sm text-surface-container-highest font-medium">Due: 26 Oct 2024</span>
+</div>
+</div>
+<!-- Micro Consumption Badge -->
+<div class="mt-4 pt-3 border-t-0 bg-surface-container-highest/10 rounded-lg p-3 flex items-center justify-between relative z-10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">speed</span>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-on-primary-container uppercase">UNITS CONSUMED</span>
+<span class="font-label-numeric text-[13px] text-on-primary font-semibold">248 kWh</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-caps text-[10px] text-on-primary-container uppercase">CYCLE</span>
+<span class="font-label-code text-[11px] text-primary-fixed block">Sep - Oct 24</span>
+</div>
+</div>
+<!-- Expandable Breakdown Toggle Button -->
+<button class="w-full mt-3 pt-2 text-center flex items-center justify-center gap-1 text-primary-fixed hover:text-on-primary transition-colors relative z-10" id="toggleBreakdownBtn">
+<span class="font-label-caps text-label-caps uppercase tracking-wider" id="toggleBreakdownLabel">View Tariff &amp; Tax Breakdown</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200" id="breakdownArrow">expand_more</span>
+</button>
+<!-- Accordion Content -->
+<div class="hidden flex-col gap-2 mt-3 pt-3 bg-surface-container-highest/15 rounded-lg p-3 relative z-10" id="breakdownContent">
+<div class="flex justify-between items-center text-on-primary">
+<span class="font-body-sm text-body-sm text-on-primary-container">Energy Charges (248 kWh @ Slab Rate)</span>
+<span class="font-label-numeric text-label-numeric">₹1,180.00</span>
+</div>
+<div class="flex justify-between items-center text-on-primary">
+<span class="font-body-sm text-body-sm text-on-primary-container">Fixed Demand &amp; Wheeling Charges</span>
+<span class="font-label-numeric text-label-numeric">₹190.00</span>
+</div>
+<div class="flex justify-between items-center text-on-primary">
+<span class="font-body-sm text-body-sm text-on-primary-container">State Electricity Duty &amp; Tax</span>
+<span class="font-label-numeric text-label-numeric">₹50.00</span>
+</div>
+<div class="flex justify-between items-center text-on-primary">
+<span class="font-body-sm text-body-sm text-tertiary-fixed font-medium">PaisaPay Platform Fee</span>
+<span class="font-label-caps text-tertiary-fixed font-bold uppercase">FREE</span>
+</div>
+<div class="mt-1 pt-2 bg-on-primary/10 rounded px-2 py-1.5 flex items-center justify-between">
+<span class="font-label-code text-[10px] text-error-container">Late payment penalty after Oct 26:</span>
+<span class="font-label-numeric text-[11px] text-error-container font-semibold">+₹50.00</span>
+</div>
+</div>
+</div>
+<!-- Active Cashback & Coupon Module -->
+<div class="bg-surface-container-lowest rounded-xl p-3.5 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container/10 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px] text-secondary">local_offer</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-caps text-label-caps bg-secondary text-on-secondary px-1.5 py-0.2 rounded font-bold">BILLPAY10</span>
+<span class="font-body-sm text-body-sm text-on-tertiary-container font-semibold">Applied</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant truncate">₹10 instant cashback unlocked into PaisaPay wallet</span>
+</div>
+</div>
+<button class="font-label-caps text-label-caps text-secondary font-bold uppercase hover:underline flex-shrink-0">Change</button>
+</div>
+<!-- Payment Modes Picker Section -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">SELECT PAYMENT SOURCE</span>
+<span class="font-label-code text-[11px] text-on-tertiary-container flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[13px]">lock</span> 256-Bit Bank Grade
+        </span>
+</div>
+<!-- Mode 1: PaisaPay Wallet Balance (Selected) -->
+<label class="relative flex items-start gap-3 bg-surface-container-lowest rounded-xl p-4 shadow-sm cursor-pointer transition-all">
+<input checked="" class="mt-1 text-secondary focus:ring-0 flex-shrink-0" name="payment_mode" type="radio"/>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-semibold">PaisaPay Wallet</span>
+<span class="bg-surface-container text-secondary font-label-caps text-[9px] px-1.5 py-0.5 rounded font-bold uppercase">FASTEST</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-on-surface font-bold">₹14,850.50</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">Sufficient balance available • 1-tap instant clearing</p>
+<div class="flex items-center gap-1 mt-2 text-on-tertiary-container">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span class="font-label-code text-[11px] font-medium">Zero failure track-record (DISCOM synchronized)</span>
+</div>
+</div>
+</label>
+<!-- Mode 2: Saved ICICI RuPay Card -->
+<label class="relative flex items-start gap-3 bg-surface-container-lowest rounded-xl p-4 shadow-sm cursor-pointer opacity-90 hover:opacity-100 transition-opacity">
+<input class="mt-1 text-secondary focus:ring-0 flex-shrink-0" name="payment_mode" type="radio"/>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-[15px] text-on-surface font-semibold">ICICI Coral RuPay</span>
+<span class="font-label-code text-[12px] text-on-surface-variant">•••• 9012</span>
+</div>
+<span class="font-label-caps text-[9px] bg-tertiary-container text-tertiary-fixed px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">₹50 Assured</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant mt-0.5">RuPay Credit on BBPS • Earn 2X Reward Points</p>
+</div>
+</label>
+<!-- Mode 3: Unified UPI & Other Modes -->
+<label class="relative flex items-center justify-between bg-surface-container-lowest rounded-xl p-3.5 shadow-sm cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Other UPI Apps &amp; Net Banking</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Google Pay, PhonePe, Paytm, 50+ Banks</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">chevron_right</span>
+</label>
+</div>
+<!-- Assurance and Legal Regulatory Compliance Grid -->
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col gap-3">
+<span class="font-label-caps text-[10px] text-on-surface-variant uppercase tracking-wider font-bold">PAISAPAY BBPS TRUST PROMISE</span>
+<div class="grid grid-cols-1 gap-2.5">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">verified_user</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-[13px] font-semibold text-on-surface">Direct Credit to DISCOM Ledger</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Instant official BBPS reference receipt generated for consumer proof.</span>
+</div>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-on-tertiary-container text-[18px] mt-0.5">currency_rupee_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-[13px] font-semibold text-on-surface">100% Assurance Guarantee</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant leading-tight">If payment does not reflect in 2 hours, instant auto-reversal to source.</span>
+</div>
+</div>
+</div>
+<!-- Trust Badges Row -->
+<div class="mt-1 pt-2 flex items-center justify-around opacity-70">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-on-surface">security</span>
+<span class="font-label-caps text-[9px] text-on-surface font-bold tracking-wider">RBI REGULATED PPI</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-on-surface">domain</span>
+<span class="font-label-caps text-[9px] text-on-surface font-bold tracking-wider">NPCI CERTIFIED</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-on-surface">check_box</span>
+<span class="font-label-caps text-[9px] text-on-surface font-bold tracking-wider">BBPS OPERATING UNIT</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Checkout Action Dock -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md pb-safe px-margin-mobile pt-3 shadow-[0_-4px_20px_rgba(11,28,48,0.08)]">
+<div class="flex items-center justify-between gap-3 mb-2 max-w-lg mx-auto">
+<!-- Price Summary column -->
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface tracking-tight">₹1,410</span>
+<span class="font-label-code text-[11px] text-on-surface-variant line-through">₹1,420</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px] text-on-tertiary-container">check_circle</span>
+<span class="font-label-code text-[10px] text-on-tertiary-container font-semibold">₹10 Coupon Discount Applied</span>
+</div>
+</div>
+<!-- Pay CTA Button -->
+<button class="flex-1 max-w-[210px] min-h-[48px] bg-secondary-container hover:bg-secondary text-on-secondary-container rounded-xl flex items-center justify-center gap-2 shadow-md transition-all active:scale-[0.98]" id="payButton">
+<span class="material-symbols-outlined text-[18px]">lock</span>
+<span class="font-headline-sm text-[15px] font-bold tracking-wide">Pay ₹1,410</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive accordion toggle for the bill tariff breakdown
+  const toggleBtn = document.getElementById('toggleBreakdownBtn');
+  const breakdownContent = document.getElementById('breakdownContent');
+  const breakdownArrow = document.getElementById('breakdownArrow');
+  const toggleLabel = document.getElementById('toggleBreakdownLabel');
+
+  if (toggleBtn && breakdownContent) {
+    toggleBtn.addEventListener('click', () => {
+      const isHidden = breakdownContent.classList.contains('hidden');
+      if (isHidden) {
+        breakdownContent.classList.remove('hidden');
+        breakdownContent.classList.add('flex');
+        breakdownArrow.style.transform = 'rotate(180deg)';
+        toggleLabel.textContent = 'Hide Tariff Breakdown';
+      } else {
+        breakdownContent.classList.add('hidden');
+        breakdownContent.classList.remove('flex');
+        breakdownArrow.style.transform = 'rotate(0deg)';
+        toggleLabel.textContent = 'View Tariff & Tax Breakdown';
+      }
+    });
+  }
+
+  // Micro-interaction ripple feedback on pay button
+  const payBtn = document.getElementById('payButton');
+  if (payBtn) {
+    payBtn.addEventListener('click', function() {
+      this.classList.add('opacity-80');
+      setTimeout(() => {
+        this.classList.remove('opacity-80');
+      }, 150);
+    });
+  }
+</script></main>
+</body></html>
